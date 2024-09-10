@@ -72,14 +72,44 @@
 
     <section class="about" id="about">
         <h2>About Us</h2>
-        <p>We are an agency inspired by the cyberpunk aesthetic, bringing you bold, futuristic web designs and immersive
-            digital experiences.</p>
+        <div class="about-content">
+            <p>Welcome to Cyberpunk World, where the future is now. We are pioneers in futuristic web design, specializing
+                in creating visually stunning and immersive digital experiences that transport you to a neon-lit dystopian
+                universe. Our team of designers and developers is passionate about blending high-tech aesthetics with
+                cutting-edge technology to bring your cyberpunk fantasies to life.</p>
+            <h3>Our Mission</h3>
+            <p>To push the boundaries of digital design and technology, creating environments that are not just seen but
+                experienced. We aim to provide our clients with innovative solutions that captivate and engage, ensuring
+                their online presence stands out in the ever-evolving digital landscape.</p>
+            <h3>Our Vision</h3>
+            <p>To be at the forefront of digital design, continuously exploring new technologies and creative concepts to
+                redefine the future of web experiences. We strive to make every project a blend of artistry and innovation,
+                reflecting the essence of a cyberpunk world.</p>
+        </div>
     </section>
+
 
     <footer class="footer" id="contact">
         <h2>Contact Us</h2>
-        <p>Email: cyberpunk@example.com</p>
+        <p style="text-align: center;">We’d love to hear from you! Whether you have questions, feedback, or just want to say hello, feel free to reach
+            out using the form below.</p>
+        <form action="submit_form.php" method="post" class="contact-form">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+            </div>
+            <button type="submit">Send Message</button>
+        </form>
     </footer>
+
 
     <script src="landing.js"></script>
 </body>
