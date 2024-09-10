@@ -1,22 +1,22 @@
-/* General Styling */
 body {
-    background-color: #0f0f0f;
-    color: #00ffea;
     font-family: 'Orbitron', sans-serif;
+    background-color: #0a0a0a;
+    color: #00ffea;
     margin: 0;
     padding: 0;
-    text-align: center;
 }
 
-/* Header */
 .header {
     background-color: #1a1a1a;
+    text-align: center;
     padding: 20px;
-    box-shadow: 0 0 15px #00ffea;
+    border-bottom: 2px solid #00ffea;
 }
 
 .header h1 {
     color: #ff00ff;
+    font-size: 3rem;
+    text-shadow: 0 0 10px #ff00ff;
 }
 
 nav ul {
@@ -26,148 +26,82 @@ nav ul {
 
 nav ul li {
     display: inline;
-    margin: 0 15px;
+    margin: 0 20px;
 }
 
 nav ul li a {
     color: #00ffea;
     text-decoration: none;
-    transition: color 0.3s;
+    font-size: 1.2rem;
 }
 
-nav ul li a:hover {
-    color: #ff00ff;
-}
-
-/* Hero Section */
 .hero {
+    text-align: center;
     padding: 50px 20px;
-    background-color: #111;
-    color: #ff00ff;
-    box-shadow: 0 0 20px #00ffea;
-    margin-bottom: 30px;
+    background-image: url('../img_files/cyberpunk_background.jpg');
+    /* Example background image */
+    background-size: cover;
+    color: white;
 }
 
 .hero h2 {
-    font-size: 3rem;
-    text-transform: uppercase;
+    font-size: 2.5rem;
+    text-shadow: 0 0 10px #00ffea;
 }
 
-.hero p {
-    font-size: 1.2rem;
-}
-
-.hero button {
-    background-color: #00ffea;
-    border: none;
+button {
     padding: 10px 20px;
-    color: #111;
-    font-size: 1.2rem;
+    background-color: #ff00ff;
+    border: none;
+    color: white;
+    font-size: 1rem;
     cursor: pointer;
+    border-radius: 5px;
     transition: background-color 0.3s;
 }
 
-.hero button:hover {
-    background-color: #ff00ff;
+button:hover {
+    background-color: #00ffea;
 }
 
-/* Features Section */
-.features {
-    padding: 50px;
-}
-
-.feature-box {
-    background-color: #222;
-    padding: 20px;
-    margin: 20px 0;
-    box-shadow: 0 0 10px #00ffea;
-    border-radius: 8px;
-    color: #00ffea;
-}
-
-.features h2 {
-    color: #ff00ff;
-}
-
-.feature-box h3 {
-    color: #ff00ff;
-}
-
-/* About Section */
-.about {
-    padding: 50px;
-    background-color: #1a1a1a;
-    color: #00ffea;
-}
-
-/* Footer */
-.footer {
-    padding: 30px;
-    background-color: #111;
-    box-shadow: 0 0 10px #00ffea;
-}
-
-.footer h2 {
-    color: #ff00ff;
-}
-/* Carousel Styling */
-/* Carousel Styling */
 .carousel {
-    width: 100%;
-    overflow: hidden;
-    margin: 20px auto;
-    position: relative;
     max-width: 900px;
-    /* Adjust this for the maximum carousel width */
+    margin: 20px auto;
+    overflow: hidden;
 }
 
 .carousel-container {
     display: flex;
-    width: calc(100% * 5);
+    width: 300%;
     /* Adjust for the number of images */
-    transition: transform 0.5s ease-in-out;
-    box-sizing: border-box;
+    transition: transform 0.5s ease;
 }
 
 .carousel-slide {
-    flex: 0 0 33.8%;
-    /* Show 3 images at once */
-    box-sizing: border-box;
-    padding: 0 10px;
-    /* Add some padding between images */
+    flex: 0 0 32.33%;
+    padding: 10px;
 }
 
 .carousel-slide img {
-    width: 53%;
-    height: 300px;
-    /* Set a fixed height for the images */
-    object-fit: cover;
-    /* Ensure the images fit inside without stretching */
-    border: 3px solid #00ffea;
-    box-shadow: 0px 0px 10px #ff00ff;
+    width: 95%;
+    height: auto;
     border-radius: 10px;
-    display: block;
+    box-shadow: 0 0 15px #ff00ff;
 }
 
-.carousel-controls {
-    position: absolute;
-    top: 50%;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    transform: translateY(-50%);
+.feature-box {
+    padding: 20px;
+    background-color: #1a1a1a;
+    margin: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px #00ffea;
 }
 
-.carousel-controls button {
-    background-color: rgba(0, 0, 0, 0.5);
-    border: none;
-    color: #00ffea;
-    font-size: 2rem;
-    cursor: pointer;
-    padding: 10px;
-    transition: background-color 0.3s;
-}
-
-.carousel-controls button:hover {
-    background-color: rgba(255, 0, 255, 0.5);
+.features h2,
+.about h2,
+.footer h2 {
+    font-size: 2.2rem;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #ff00ff;
 }
